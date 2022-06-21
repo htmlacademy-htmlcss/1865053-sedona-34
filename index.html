@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
       <header class="page-header">
@@ -16,7 +17,7 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>            
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list">
@@ -31,17 +32,22 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда!</a>            
+              <a class="navigation-link" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
       </header>
 
       <main class="main-index">
+
+      <section class="image-background">
       <h1 class="visually-hidden">Сайт городка Седона</h1>
       <img class="index-background" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona!">
+      </section>
+
       <p class="sedona-slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
       <p class="advantages">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+
 
       <section class="sedona-advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -50,6 +56,7 @@
             <h3 class="sedona-advantages-title">Настоящий городок</h3>
             <span class="sedona-advantages-number">- №1 -</span>
             <p class="sedona-advantages-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          </li>
             <p class="sedona-img"><img class="sedona-city-img" src="images/sedona-city.jpg" width="800" height="384" alt="Город Седона"></p>
                 <ul class="sedona-advantages-sublist">
                   <li class="sedona-advantages-subitem-one">
@@ -66,8 +73,8 @@
                   </li>
                 </ul>
           </li>
+          <p class="sedona-img"><img class="sedona-bridge-devil-img" src="images/bridge-devil.jpg" width="800" height="384" alt="Мост Дьявола"></p>
           <li class="sedona-advantages-item-two">
-            <p class="sedona-img"><img class="sedona-bridge-devil-img" src="images/bridge-devil.jpg" width="800" height="384" alt="Мост Дьявола"></p>
             <h3 class="sedona-advantages-title">Там есть мост Дьявола</h3>
             <span class="sedona-advantages-number">- №2 -</span>
             <p class="sedona-advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -90,20 +97,21 @@
         </ul>
       </section>
 
+
       <section class="sedona-hotel-search">
         <h2 class="sedona-interest">Заинтересовались?</h2>
         <p class="sedona-interest-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button-search" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
       </main>
-      
+
       <footer class="page-footer">
         <section class="newsletter">
           <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
           <p class="about-newsletter">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button-newsletter" type="submit">Подписаться</button>
+          <button class="button button-newsletter" type="submit">Подписаться</button>
           </form>
         </section>
 
@@ -130,9 +138,7 @@
 
         <section class="footer-contacts">
           <h2 class="visually-hidden">Телефон</h2>
-          <address class="footer-contacts-address">
           <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </address>
         </section>
 
         <section class="footer-htmlacademy">

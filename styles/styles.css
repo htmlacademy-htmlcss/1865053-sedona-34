@@ -44,6 +44,17 @@
      color: #000000;
    }
 
+   .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
    .img {
     display: block;
    }
@@ -83,41 +94,55 @@
    }
 
    .navigation-list {
+    display: flex;
     width: 390px;
     margin: 0;
     margin-left: 20px;
     padding: 0;
-    list-style: none;
-  }
-
-  .navigation-user {
-    max-width: 250px;
-    margin-left: auto;
+    list-style-type: none;
   }
 
    .navigation-link {
+     display: block;
+     flex-wrap: wrap; 
+     padding: 20px 19px;
      color: #000000;
      text-align: center;
      font-weight: 700;
      text-decoration: none;
    }
 
+   .navigation-user .navigation-link {
+    min-width: 16px;
+    min-height: 22px;
+  }
+
    .main-index {
     flex-grow: 1;
+    background-color: #FFFFFF;
   }
+  
+  .sedona-hotel-search {
+    margin-bottom: 94px;
+   }
 
   .index-background {
     display: block;
     margin: 0 auto;
   }
   
-   .image-background {
+   .index-sedona-logo {
      color: #000000;
      background-color: #ffffff;
      background-image: url("../images/index-background.jpg");
      background-size: 100% auto;
      background-repeat: no-repeat;
      text-align: center;
+   }
+
+   .sedona-logo {
+    padding-top: 51px; 
+    padding-bottom: 83px; 
    }
 
    .five-advantages {
@@ -130,6 +155,18 @@
      font-weight: 700;
      text-transform: uppercase;
      text-align: center;
+     margin-top: 63px;
+     margin-bottom: 31px;
+   }
+
+   .advantages {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 90px;
+   }
+
+   .sedona-advantages {
+    margin-bottom: 91px;
    }
 
    .sedona-advantages-list,
@@ -283,6 +320,8 @@
     width: 1200px;
     margin: 0 auto;
     background-color: #FFFFFF;
+    padding-top: 45px;
+    padding-bottom: 35px; 
    }
 
    .footer-social {
@@ -296,6 +335,7 @@
    }
 
    .page-footer-title {
+     margin-top: 94px;
      font-size: 30px;
      line-height: 36px;
      text-transform: uppercase;
@@ -324,12 +364,18 @@
      display: flex;
     }
 
-    .inner-header {
+    .sedona-filter {
       color: #FFFFFF;
-      
       background-image: url(../images/catalog-background.jpg);
       background-size: 100% auto;
       background-repeat: no-repeat;
+    }
+
+    .sedona-filter-block {
+      margin: 0;
+      padding-top: 35px;
+      padding-bottom: 70px;
+      padding-left: 70px;
     }
 
     .catalog-filter {
@@ -343,6 +389,93 @@
 
     .catalog-hotels {
       display: flex;
+    }
+
+    .newsletter-form {
+      margin-bottom: 94px;
+    }
+
+    .footer-social-list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-social-item {
+      width: 56px;
+      height: 44px;
+      margin-right: 8px; 
+      margin-bottom: 8px;
+    }
+
+    .footer-social-item:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    .inner-header-title {
+      margin-top: 0;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      margin: 0;
+      padding: 0; 
+      color: #FFFFFF;
+      list-style-type: none;
+    }
+
+    .sorting-container {
+      display: flex;
+      color: #000000;
+      background-color: #ffffff;
+}
+    .hotel-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-inner {
+      background-color: #FFFFFF;
+    }
+
+    .pagination-container {
+      display: flex;
+      padding: 16px; 
+
+    }
+
+    .pagination {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .pagination-item:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    .pagination-link {
+      display: block;
+      box-sizing: border-box;
+      border-radius: 4px;
+      width: 60px;
+      height: 60px;
+      padding: 12px 23px;
+      line-height: 36px;
+      font-weight: 700;
+      color: #ffffff;
+      background-color: #82B3D3;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .pagination-current {
+      color: #000000;
+      background-color:  #F2F2F2;;
     }
 
 

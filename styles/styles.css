@@ -432,9 +432,13 @@
       background-color: #ffffff;
 }
     .hotel-list {
+      display: grid;
+      grid-template-columns: repeat(3, 340px); 
       list-style-type: none;
-      margin: 0;
+      margin-left: 73px;
+      margin-bottom: 66px;
       padding: 0;
+      gap: 18px;
     }
 
     .main-inner {
@@ -478,4 +482,34 @@
       background-color:  #F2F2F2;;
     }
 
+    .hotel-card {
+      display: grid;
+      grid-template-rows: 211px min-content auto min-content 20px;
+      grid-template-columns: 20px 150px 150px 20px;
+      background-color: #FFFFFF;
+    }
+
+    .hotel-card-link {
+      grid-column: 1 / -1;
+    }
+
+    .hotel-card-title {
+      grid-column: span 3;
+    }
+
+    .hotel-card-type,
+    .hotel-card-button {
+      grid-column: 2 / 3;
+    }
+
+    .hotel-card-fav-button,
+    .hotel-card-price,
+    .hotels-rating {
+      grid-column: 3 / 4;
+    }
+
+    .hotel-card-title {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
 

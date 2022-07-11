@@ -77,7 +77,8 @@
   }
 
   .button {
-    display: inline-block;
+    position: relative;
+    display: block;
     font-family: inherit;
     line-height: 36px;
     font-weight: 700;
@@ -212,9 +213,10 @@
     background-color: #756157;
     border-radius: 4px;
     width: 160px;
-    height: 37px;
+
     font-size: 16px;
     margin-left: 20px;
+    margin-bottom: 25px;
   }
 
   .button-reserve:hover {

@@ -1017,12 +1017,8 @@
     padding: 0;
   }
 
-  .filter-group-wrapper-left {
-    display: flex;
-  }
-
   .catalog-filter-group:nth-child(n+3) {
-    margin-top: 30px;
+    margin-left: 175px;
   }
 
   .catalog-filter-group {
@@ -1047,10 +1043,6 @@
 
   .catalog-filter-item:not(:last-child) {
     margin-bottom: 15px;
-  }
-
-  .filter-group-wrapper-right {
-    display: flex;
   }
 
   .catalog-filter-label {

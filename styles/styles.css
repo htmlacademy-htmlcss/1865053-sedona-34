@@ -1529,24 +1529,24 @@
     width: 420px;
     padding: 15px 60px 14px 19px;
     border: none;
-    background-color: #f2f2f2;
+    background-color: #F2F2F2;
     border-radius: 4px;
     box-sizing: border-box;
     align-self: flex-start;
   }
 
+  .modal-field:not(:placeholder-shown) {
+    background-color: #F2F2F2;
+    box-shadow: 0 0 0 2px #000000;
+  }
+
   .modal-field:hover {
-    background-color: #e6e6e6;
+    background-color: #E6E6E6;
   }
 
   .modal-field:focus {
-    background-color: #e6e6e6;
+    background-color: #E6E6E6;
     outline: 3px solid #83b3d3;
-  }
-
-  .modal-field:not(:placeholder-shown) {
-    background-color: #ffffff;
-    box-shadow: 0 0 0 2px #000000;
   }
 
   .modal-field:disabled {

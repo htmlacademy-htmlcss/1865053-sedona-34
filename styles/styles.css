@@ -1060,6 +1060,7 @@
     line-height: 21px;
     background-color: transparent;
     outline: none;
+    color: #FFFFFF;
   }
 
   .catalog-filter-price::placeholder {
@@ -1219,19 +1220,21 @@
   }
 
   .catalog-filter-price:hover {
-    border-color: rgba(255, 255, 255, 0.6);
+    border-color: rgba(255, 255, 255, 0.6);    
   }
 
   .catalog-filter-price:focus {
     border: 2px solid #FFFFFF;
     box-shadow: 0px 0px 0px 3px #81B3D2;
     border-radius: 4px 0px 0px 4px;
+    color: #FFFFFF;
   }
 
   .catalog-filter-price:active {
     border-color: #FFFFFF;
     background-color: #756257;
     box-shadow: none;
+    color: #FFFFFF;
   }
 
   .range-toggle:hover {

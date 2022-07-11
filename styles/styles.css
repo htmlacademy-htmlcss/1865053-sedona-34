@@ -991,10 +991,12 @@
 
   .sedona-filter {
     color: #FFFFFF;
-    background-image: url(../images/catalog-background.jpg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
     background-color: #756157;
+    background-image: url(../images/catalog-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
   }
 
   .sedona-filter-block {

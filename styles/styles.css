@@ -1888,14 +1888,20 @@
 
   .pagination {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style-type: none;
     align-items: center;
+    max-width: 480px;
   }
 
   .pagination-item:not(:last-child) {
     margin-right: 8px;
+  }
+  
+  .pagination-item:nth-child(n+8) {
+    margin-top: 8px;
   }
 
   .pagination-link {
